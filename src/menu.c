@@ -917,7 +917,7 @@ static void send_evil_portal_html(AppState* state) {
             // End HTML block
             const char* html_close_marker = "[HTML/CLOSE]";
             uart_send(state->uart_context, (const uint8_t*)html_close_marker, 12);
-            
+
             free(the_html);
         }
     }
